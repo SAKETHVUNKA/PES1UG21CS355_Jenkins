@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main'
+               git branch: 'main',
                url: 'https://github.com/SAKETHVUNKA/PES1UG21CS355_Jenkins.git'  // Replace with your Git repository URL
             }
         }
         stage('Build') {
             steps {
                 build 'PES1UG21CS355-1'
-                sh 'g++ hello2.cpp -o output'
+                sh 'g++ hello2.cpp - o output'
             }
         }
         stage('Test') {
