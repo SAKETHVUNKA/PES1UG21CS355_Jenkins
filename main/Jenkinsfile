@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main',
+               git branch: 'main'
                url: 'https://github.com/SAKETHVUNKA/PES1UG21CS355_Jenkins.git'  // Replace with your Git repository URL
             }
         }
